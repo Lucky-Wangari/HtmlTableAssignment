@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
     <style>
-        input{
+        input {
             text-align: center;
             background-color: lightgoldenrodyellow;
             border-radius: 3px;
@@ -17,16 +16,18 @@
 
         }
 
-        #heading{
+        #heading {
             color: green;
         }
-        #link{
+
+        #link {
             border-style: solid;
             border-radius: 20%;
             background-color: rgb(7, 235, 7);
             font-size: medium;
         }
-        #Account{
+
+        #Account {
             color: white;
             font-size: medium;
             border: solid;
@@ -34,34 +35,41 @@
         }
         #login{
             color: black;
-            font-size: x-large;
+            background-color: antiquewhite;
+            
         }
-        .form{
+        .form {
             background-image: url(/images/backimg.jpg);
             background-size: 100%;
             background-repeat: no-repeat;
             margin-top: 150px;
             margin-left: 350px;
-            border:solid;
+            border: solid;
             width: 40%;
             height: 40%;
-        
         }
 
+        body {
+            background-image: url('/images/finaldecision.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            text-align: center;
+        }
+
+       p{
+            margin: auto ;
+            font-size: large ;
+        }
+        #button{
+            color: rgb(22, 53, 22);
+        }
+    
     </style>
-    </body>
-    <style>
-    body{
-        background-image: url('/images/finaldecision.jpg') ;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-        text-align: center;
-    }
-</style>
+</head>
 <body>
     <form class="form">
-        <h3 id=heading>CREATE AN CCOUNT</h3>
+        <h3 id=heading>CREATE AN ACCOUNT</h3>
         <br>
         <input type="FullName" placeholder="Enter FullName">
         <br>
@@ -72,10 +80,10 @@
         <input type="password" placeholder="Enter password">
         <br>
         <br>
-        <a id="Account" href="http://127.0.0.1:5500/signin.html">Create Account</a>
+        <button id="button" type="button">Create Account</button>
         <br>
         <br>
-        <p id="login">Already have an account <a href="http://127.0.0.1:5500/login.html">login</a></p>
+        <p>Already have an account <a href="login.html" id="login">log in</a></p>
     </form>
 </body>
 </html>
